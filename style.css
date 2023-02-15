@@ -41,7 +41,15 @@ header .header_logo {
     position: absolute;
     left: 20px;
     bottom: 17px;
-    z-index: 2;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.frame5 p {
+    position: absolute;
+    left: 20px;
+    top: -10px;
     color: white;
     font-size: 1.3em;
     font-family: 'Poppins', sans-serif;
@@ -51,26 +59,16 @@ header .header_logo {
     position: absolute;
     left: 20px;
     bottom: 13px;
-    z-index: 2;
     color: white;
     font-size: 1.3em;
 }
 
-.frame5 p {
-    position: absolute;
-    left: 20px;
-    top: -10px;
-    z-index: 2;
-    color: white;
-    font-size: 1.3em;
-    font-family: 'Poppins', sans-serif;
-}
+
 
 .frame5 i {
     position: absolute;
     left: 20px;
     top: 45px;
-    z-index: 2;
     color: white;
     font-size: 1.3em;
 }
@@ -78,12 +76,6 @@ header .header_logo {
 .container img {
     width: 100%;
     height: 100%;
-    z-index: 1;
-}
-
-.galary {
-    display: flex;
-    align-items: center;
 }
 
 .frame1 {
@@ -120,3 +112,34 @@ header .header_logo {
     grid-area: g;
     position: relative;
 }
+
+
+.muddy_space{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    display: none;
+}
+
+.muddy_space .inside_text {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.muddy_space .title_text {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.inside_space {
+    padding: 15px 15px;
+}
+
