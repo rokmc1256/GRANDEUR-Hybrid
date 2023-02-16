@@ -24,8 +24,8 @@ header .header_logo {
     margin-bottom: 15px;
     display: grid;
     grid-template-areas: 'a b c'
-                         'd e c'
-                         'f f g';
+        'd e c'
+        'f f g';
 
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -37,7 +37,10 @@ header .header_logo {
     font-size: 1.1em;
 }
 
-.frame3 p, .frame4 p, .frame6 p, .frame7 p{
+.frame3 p,
+.frame4 p,
+.frame6 p,
+.frame7 p {
     position: absolute;
     left: 20px;
     bottom: 17px;
@@ -55,7 +58,10 @@ header .header_logo {
     font-family: 'Poppins', sans-serif;
 }
 
-.frame3 i, .frame4 i, .frame6 i, .frame7 i {
+.frame3 i,
+.frame4 i,
+.frame6 i,
+.frame7 i {
     position: absolute;
     left: 20px;
     bottom: 13px;
@@ -114,7 +120,7 @@ header .header_logo {
 }
 
 
-.muddy_space{
+.muddy_space {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -125,20 +131,51 @@ header .header_logo {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: rgba( 0, 0, 0, 0.5 );
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
-}
-
-.muddy_space .inside_text {
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .muddy_space .title_text {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .inside_space {
     padding: 15px 15px;
+    position: relative;
 }
 
+.title_text {
+    position: absolute;
+}
+
+.inside_text {
+    position: absolute;
+    top: 70px;
+    padding-right: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@keyframes slider_inside_text {
+    from {
+        top: 90px;
+        opacity: 0;
+    }
+
+    to {
+        top: 70px;
+        opacity: 1;
+    }
+}
+
+@keyframes slider_title_text {
+    from {
+        top: 70px;
+        opacity: 0;
+    }
+
+    to {
+        top: 15px;
+        opacity: 1;
+    }
+}
